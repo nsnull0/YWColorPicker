@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ExampleOfColorPicker' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ExampleOfColorPicker
+
+  target 'ExampleOfColorPickerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ExampleOfColorPickerUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+pod 'YWColorPicker', :path => '~/Documents/Github/YWColorPicker'
+end

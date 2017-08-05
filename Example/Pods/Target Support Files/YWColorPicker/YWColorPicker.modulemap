@@ -1,0 +1,6 @@
+framework module YWColorPicker {
+  umbrella header "YWColorPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
