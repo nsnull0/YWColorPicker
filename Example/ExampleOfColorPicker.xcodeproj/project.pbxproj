@@ -508,6 +508,7 @@
 		C1E235201F35EAF5001901D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -559,6 +560,7 @@
 		C1E235211F35EAF5001901D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -604,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 996B858E181F7E6FD83B82E0 /* Pods-ExampleOfColorPicker.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C3C9T33288;
 				INFOPLIST_FILE = ExampleOfColorPicker/Info.plist;
@@ -618,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DC5C6CA8922D9BDFDE6C00D /* Pods-ExampleOfColorPicker.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C3C9T33288;
 				INFOPLIST_FILE = ExampleOfColorPicker/Info.plist;
@@ -632,7 +636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82F868B8C37ED69CE58F1E7D /* Pods-ExampleOfColorPickerTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = C3C9T33288;
 				INFOPLIST_FILE = ExampleOfColorPickerTests/Info.plist;
@@ -648,7 +652,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CD8490FE2C100484B3547B4 /* Pods-ExampleOfColorPickerTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = C3C9T33288;
 				INFOPLIST_FILE = ExampleOfColorPickerTests/Info.plist;
@@ -664,7 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC81666DC5F57FA8D730D0EA /* Pods-ExampleOfColorPickerUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = C3C9T33288;
 				INFOPLIST_FILE = ExampleOfColorPickerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -679,7 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E34438E8E611A72DF8EF319D /* Pods-ExampleOfColorPickerUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = C3C9T33288;
 				INFOPLIST_FILE = ExampleOfColorPickerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -709,6 +713,7 @@
 				C1E235241F35EAF5001901D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1E235251F35EAF5001901D6 /* Build configuration list for PBXNativeTarget "ExampleOfColorPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +722,7 @@
 				C1E235271F35EAF5001901D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1E235281F35EAF5001901D6 /* Build configuration list for PBXNativeTarget "ExampleOfColorPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +731,7 @@
 				C1E2352A1F35EAF5001901D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
