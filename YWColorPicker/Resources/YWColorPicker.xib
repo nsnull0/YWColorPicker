@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWColorPicker" customModule="YWColorPicker" customModuleProvider="target">
             <connections>
+                <outlet property="chromaticView" destination="tzj-NM-Zq3" id="t52-vE-fgb"/>
+                <outlet property="sliderChromeView" destination="a4G-XX-Nn0" id="8aq-l3-IV1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

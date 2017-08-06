@@ -12,6 +12,11 @@ public class YWColorPicker: UIViewController {
 
     private weak var root:UIViewController?
     
+    @IBOutlet weak var chromaticView: UIView!
+    
+    @IBOutlet weak var sliderChromeView: UIView!
+    
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
 
@@ -68,14 +73,23 @@ public class YWColorPicker: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: Touch Handling
+    
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch:UITouch in touches {
+            self.dispatchTouchEvent(setTouch: touch)
+        }
     }
-    */
+    
+    public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
+    
+    func dispatchTouchEvent(setTouch:UITouch)  {
+        
+    }
+    
 
 }

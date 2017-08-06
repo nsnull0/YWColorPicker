@@ -42,6 +42,11 @@ class YWColorPickerTests: XCTestCase {
         
          XCTAssertEqual(rootController.view.subviews.count, 0)
         
+        colorPicker.showColorPicker()
+        
+        XCTAssertEqual(rootController.view.subviews.count, 1)
+        
+        
     }
     
 }
