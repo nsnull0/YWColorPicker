@@ -4,8 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,6 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxx-ay-yXo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KwG-nx-aBn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-IF-vE6">
                     <rect key="frame" x="8" y="100" width="359" height="250"/>
                     <subviews>
@@ -46,11 +53,15 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vZZ-IF-vE6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="DL7-AV-SMj"/>
+                <constraint firstItem="uxx-ay-yXo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DOg-nF-gGZ"/>
+                <constraint firstAttribute="bottom" secondItem="uxx-ay-yXo" secondAttribute="bottom" id="MfG-Wo-Kle"/>
                 <constraint firstItem="vZZ-IF-vE6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="TlW-2p-kFM"/>
+                <constraint firstAttribute="trailing" secondItem="uxx-ay-yXo" secondAttribute="trailing" id="mak-5j-Eqc"/>
                 <constraint firstAttribute="trailing" secondItem="vZZ-IF-vE6" secondAttribute="trailing" constant="8" id="qBf-jS-FVW"/>
+                <constraint firstItem="uxx-ay-yXo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ugd-Fl-L1l"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>

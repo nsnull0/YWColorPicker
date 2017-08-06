@@ -42,9 +42,12 @@ public class YWColorPicker: UIViewController {
         
         self.view.frame = CGRect(x: 0, y: 0, width: getScreenWidth(), height: getScreenHeight())
         
+        
         self.root!.view.addSubview(self.view)
         
         self.view.setupLayoutConstraint_0_0_0_0_toParent()
+        
+        self.view.removeFromSuperview()
         
         
     }
@@ -53,6 +56,18 @@ public class YWColorPicker: UIViewController {
         super.init(coder: aDecoder)
     }
 
+    
+    public func showColorPicker(){
+        guard self.root != nil else {
+            return
+        }
+        
+        self.root!.view.addSubview(self.view)
+        self.view.setupLayoutConstraint_0_0_0_0_toParent()
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 

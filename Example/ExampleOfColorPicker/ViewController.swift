@@ -11,17 +11,22 @@ import YWColorPicker
 
 class ViewController: UIViewController {
 
-    
+    var pickerColor:YWColorPicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        let pickerColor:YWColorPicker = YWColorPicker(parent: self)
+        pickerColor = YWColorPicker(parent: self)
         
         
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func tapContainer(_ sender: UITapGestureRecognizer) {
+        
+        pickerColor!.showColorPicker()
+        
     }
 
     override func didReceiveMemoryWarning() {

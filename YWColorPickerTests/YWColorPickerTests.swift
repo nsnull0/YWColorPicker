@@ -33,4 +33,15 @@ class YWColorPickerTests: XCTestCase {
         }
     }
     
+    func testSubViewRoot() {
+        let rootController:UIViewController = UIViewController()
+        
+        XCTAssertEqual(rootController.view.subviews.count, 0)
+        
+        let colorPicker:YWColorPicker = YWColorPicker(parent: rootController)
+        
+         XCTAssertEqual(rootController.view.subviews.count, 0)
+        
+    }
+    
 }
