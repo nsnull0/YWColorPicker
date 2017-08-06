@@ -19,7 +19,7 @@
     "git": "https://github.com/nsnull0/YWColorPicker.git",
     "tag": "1.0"
   },
-  "source_files": "YWColorPicker/*.{swift}",
+  "source_files": "YWColorPicker/Classes/*.{swift}",
   "resources": "YWColorPicker/Resources/*.{png,jpeg,jpg,storyboard,xib}",
   "frameworks": "UIKit"
 }

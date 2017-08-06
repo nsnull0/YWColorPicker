@@ -8,9 +8,11 @@
 
 import UIKit
 
-class YWColorPicker: UIViewController {
+public class YWColorPicker: UIViewController {
 
-    override func viewDidLoad() {
+    private weak var root:UIViewController?
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         
@@ -18,7 +20,7 @@ class YWColorPicker: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -28,6 +30,23 @@ class YWColorPicker: UIViewController {
         super.init(nibName: "YWColorPicker", bundle: bundle)
         
         self.didMove(toParentViewController: parent)
+        
+        setupInitializeProperty(parent: parent)
+        
+    }
+    
+    
+    func setupInitializeProperty(parent: UIViewController) {
+        
+        self.root = parent
+        
+        self.view.frame = CGRect(x: 0, y: 0, width: getScreenWidth(), height: getScreenHeight())
+        
+        self.root!.view.addSubview(self.view)
+        
+        self.view.setupLayoutConstraint_0_0_0_0_toParent()
+        
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {

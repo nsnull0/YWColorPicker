@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C18010B81F36E5C40081DAD4 /* YWExtensionOfUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */; };
+		C18010BA1F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */; };
 		C1E234DB1F35D8FC001901D6 /* YWColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */; };
 		C1E234E01F35D8FC001901D6 /* YWColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234DF1F35D8FC001901D6 /* YWColorPickerTests.swift */; };
 		C1E234ED1F35E059001901D6 /* YWColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234EB1F35E059001901D6 /* YWColorPicker.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIView.swift; path = Classes/YWExtensionOfUIView.swift; sourceTree = "<group>"; };
+		C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIViewController.swift; path = Classes/YWExtensionOfUIViewController.swift; sourceTree = "<group>"; };
 		C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YWColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E234D51F35D8FC001901D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1E234DA1F35D8FC001901D6 /* YWColorPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWColorPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C18010B61F36E5740081DAD4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */,
+				C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		C1E234C71F35D8FC001901D6 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 		C1E234D31F35D8FC001901D6 /* YWColorPicker */ = {
 			isa = PBXGroup;
 			children = (
+				C18010B61F36E5740081DAD4 /* Extension */,
 				C1E234D51F35D8FC001901D6 /* Info.plist */,
 				C1E234EB1F35E059001901D6 /* YWColorPicker.swift */,
 				C1E234F01F35E5D8001901D6 /* Resources */,
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18010BA1F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift in Sources */,
 				C1E234ED1F35E059001901D6 /* YWColorPicker.swift in Sources */,
+				C18010B81F36E5C40081DAD4 /* YWExtensionOfUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

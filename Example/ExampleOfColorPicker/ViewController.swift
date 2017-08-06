@@ -11,8 +11,15 @@ import YWColorPicker
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let pickerColor:YWColorPicker = YWColorPicker(parent: self)
+        
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
