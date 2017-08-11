@@ -1,5 +1,5 @@
 PODS:
-  - YWColorPicker (0.9)
+  - YWColorPicker (0.9.1)
 
 DEPENDENCIES:
   - YWColorPicker (from `~/Documents/Github/YWColorPicker`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "~/Documents/Github/YWColorPicker"
 
 SPEC CHECKSUMS:
-  YWColorPicker: 3a23c129ee790a850e509503d7dbb7974cf06bf9
+  YWColorPicker: febd8f0d7854b6f183a2b15fb57e2f421a10a5e1
 
 PODFILE CHECKSUM: e1ca078288ee37ddf9e28f7070d82fef2ffd50b8
 

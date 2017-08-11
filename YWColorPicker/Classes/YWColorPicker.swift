@@ -78,16 +78,19 @@ public class YWColorPicker: UIViewController {
     
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch:UITouch in touches {
-            self.dispatchTouchEvent(setTouch: touch)
+            self.dispatchTouchEvent(_point: touch.location(in: self.view))
         }
     }
     
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        for touch:UITouch in touches{
+            self.dispatchTouchEvent(_point: touch.location(in: self.view))
+        }
     }
     
     
-    func dispatchTouchEvent(setTouch:UITouch)  {
+    func dispatchTouchEvent(_point locationPoint:CGPoint)  {
+        sliderChromeView.center = CGPoint.init(x: locationPoint.x, y: sliderChromeView.center.y);
         
     }
     

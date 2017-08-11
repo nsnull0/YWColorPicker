@@ -28,7 +28,7 @@
                     </view>
                     <blurEffect style="light"/>
                 </visualEffectView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-IF-vE6">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-IF-vE6">
                     <rect key="frame" x="8" y="100" width="359" height="250"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzj-NM-Zq3">
