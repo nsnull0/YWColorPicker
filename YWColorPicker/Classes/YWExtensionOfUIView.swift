@@ -38,4 +38,26 @@ extension UIView {
         self.superview!.addConstraint(bottomConstraint)
     }
     
+    
+    var setupAlert:Bool{
+        set{
+            self.layer.cornerRadius = 10
+            self.layer.masksToBounds = true
+        }
+        get{
+            return self.isHidden
+        }
+    }
+    
+    var setupTarget:Bool{
+        set{
+            self.layer.cornerRadius = 15
+            self.layer.masksToBounds = true
+        }
+        
+        get{
+            return self.isHidden
+        }
+    }
+    
 }

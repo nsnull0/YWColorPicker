@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C18010B81F36E5C40081DAD4 /* YWExtensionOfUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */; };
 		C18010BA1F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */; };
+		C19637301F3EF4B500D801E1 /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = C196372F1F3EF4B500D801E1 /* colormap.png */; };
 		C1E234DB1F35D8FC001901D6 /* YWColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */; };
 		C1E234E01F35D8FC001901D6 /* YWColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234DF1F35D8FC001901D6 /* YWColorPickerTests.swift */; };
 		C1E234ED1F35E059001901D6 /* YWColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234EB1F35E059001901D6 /* YWColorPicker.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIView.swift; path = Classes/YWExtensionOfUIView.swift; sourceTree = "<group>"; };
 		C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIViewController.swift; path = Classes/YWExtensionOfUIViewController.swift; sourceTree = "<group>"; };
+		C196372F1F3EF4B500D801E1 /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 		C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YWColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E234D51F35D8FC001901D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1E234DA1F35D8FC001901D6 /* YWColorPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWColorPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E234EC1F35E059001901D6 /* YWColorPicker.xib */,
+				C196372F1F3EF4B500D801E1 /* colormap.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19637301F3EF4B500D801E1 /* colormap.png in Resources */,
 				C1E234EE1F35E059001901D6 /* YWColorPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
