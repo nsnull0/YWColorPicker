@@ -30,4 +30,20 @@ extension UIViewController {
         
         
     }
+    
+    
+    func startView() {
+        
+        var selfFrame:CGRect  = self.view.frame
+        selfFrame.origin.x = -self.getScreenWidth()
+        
+        self.view.frame = selfFrame
+        
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        })
+        
+    }
+    
 }

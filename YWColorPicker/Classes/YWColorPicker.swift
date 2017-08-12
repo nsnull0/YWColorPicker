@@ -71,6 +71,8 @@ public class YWColorPicker: UIViewController {
         self.view.setupLayoutConstraint_0_0_0_0_toParent()
         
         
+        self.startView()
+        
     }
     
     
@@ -99,7 +101,9 @@ public class YWColorPicker: UIViewController {
     //MARK: Touch Gesture
     @IBAction func tapDismiss(_ sender: UITapGestureRecognizer) {
         
-        
+        self.removeSelf(completion: {
+            (_) in
+        })
         
     }
     
