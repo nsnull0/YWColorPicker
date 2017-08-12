@@ -60,4 +60,17 @@ extension UIView {
         }
     }
     
+    var setupResult:CGFloat{
+        set{
+            self.layer.masksToBounds = true
+            self.layer.borderColor = UIColor.lightGray.cgColor
+            self.layer.borderWidth = newValue
+            self.layer.cornerRadius = 10
+        }
+        
+        get {
+            return self.layer.borderWidth
+        }
+    }
+    
 }

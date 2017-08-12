@@ -49,4 +49,28 @@ class YWColorPickerTests: XCTestCase {
         
     }
     
+    func testRemoveSubViewRoot() {
+        let rootController:UIViewController = UIViewController()
+        
+        let colorPicker:YWColorPicker = YWColorPicker(parent: rootController)
+        
+        colorPicker.showColorPicker()
+        
+        
+        
+        let expect:XCTestExpectation = XCTestExpectation.init(description: "Waiting Success")
+        
+        colorPicker.removeSelf(completion: {
+            (finish) in
+            expect.fulfill()
+        })
+        
+        
+        wait(for: [expect], timeout: 0.5)
+        
+        XCTAssertEqual(rootController.view.subviews.count, 0)
+        
+        
+    }
+    
 }

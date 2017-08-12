@@ -25,6 +25,9 @@
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KwG-nx-aBn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VNB-m1-QcU" appends="YES" id="7hX-Aw-Cl8"/>
+                        </connections>
                     </view>
                     <blurEffect style="dark"/>
                 </visualEffectView>
@@ -87,6 +90,11 @@
                                 <constraint firstAttribute="width" constant="50" id="iJW-Wn-VSl"/>
                                 <constraint firstAttribute="height" constant="50" id="mqm-A8-tKB"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setupResult">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,6 +128,11 @@
             </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
+        <tapGestureRecognizer id="VNB-m1-QcU">
+            <connections>
+                <action selector="tapDismiss:" destination="-1" id="waO-IZ-2wq"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="colormap.png" width="1004" height="1004"/>

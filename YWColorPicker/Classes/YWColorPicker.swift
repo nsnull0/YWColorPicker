@@ -75,7 +75,6 @@ public class YWColorPicker: UIViewController {
     
     
     // MARK: Touch Handling
-    
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch:UITouch in touches {
             self.dispatchTouchEvent(_point: touch.location(in: self.chromaticView))
@@ -95,6 +94,13 @@ public class YWColorPicker: UIViewController {
         }
         sliderChromeView.center = CGPoint.init(x: locationPoint.x, y: locationPoint.y);
         self.view.setNeedsDisplay()
+    }
+    
+    //MARK: Touch Gesture
+    @IBAction func tapDismiss(_ sender: UITapGestureRecognizer) {
+        
+        
+        
     }
     
 
