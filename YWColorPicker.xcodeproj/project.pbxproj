@@ -30,6 +30,8 @@
 		C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIView.swift; path = Classes/YWExtensionOfUIView.swift; sourceTree = "<group>"; };
 		C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIViewController.swift; path = Classes/YWExtensionOfUIViewController.swift; sourceTree = "<group>"; };
 		C196372F1F3EF4B500D801E1 /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		C19637311F3EF97000D801E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C19637321F3EF98B00D801E1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YWColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E234D51F35D8FC001901D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1E234DA1F35D8FC001901D6 /* YWColorPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWColorPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				C1E234EF1F35E51B001901D6 /* YWColorPicker.podspec */,
+				C19637311F3EF97000D801E1 /* README.md */,
+				C19637321F3EF98B00D801E1 /* LICENSE */,
 				C1E234D31F35D8FC001901D6 /* YWColorPicker */,
 				C1E234DE1F35D8FC001901D6 /* YWColorPickerTests */,
 				C1E234D21F35D8FC001901D6 /* Products */,
