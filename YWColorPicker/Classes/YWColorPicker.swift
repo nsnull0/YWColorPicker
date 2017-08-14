@@ -82,14 +82,6 @@ public class YWColorPicker: UIViewController {
     
     public func showColorPickerWith(_initial color:UIColor){
         
-        
-        self.root!.view.addSubview(self.view)
-        self.view.setupLayoutConstraint_0_0_0_0_toParent()
-        
-        self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-        
-        self.removeSelfWithoutAnimation()
-        
         guard self.root != nil else {
             return
         }
@@ -107,14 +99,15 @@ public class YWColorPicker: UIViewController {
         currentHue = tempHue
         currentSaturation = tempSaturation
         
+        
+        self.view.layoutIfNeeded()
+        
         sliderChromeView.center = CGPoint(x: (currentHue*chromaticView.bounds.size.width)+sliderChromeView.bounds.origin.x,
                                           y: (1.0-currentSaturation)*chromaticView.bounds.size.height+sliderChromeView.bounds.origin.y)
         
         
-        
         sliderChromeView.backgroundColor = color
         
-        sliderChromeView.setNeedsDisplay()
         
         self.startView()
     }
