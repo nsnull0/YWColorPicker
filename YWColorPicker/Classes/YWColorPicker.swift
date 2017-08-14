@@ -17,6 +17,10 @@ public class YWColorPicker: UIViewController {
     @IBOutlet weak var sliderChromeView: UIView!
     
     
+    private var currentHue:CGFloat = 0
+    private var currentBrightness:CGFloat = 0
+    private var currentSaturation:CGFloat = 0
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
 
@@ -71,8 +75,48 @@ public class YWColorPicker: UIViewController {
         self.view.setupLayoutConstraint_0_0_0_0_toParent()
         
         
+        
         self.startView()
         
+    }
+    
+    public func showColorPickerWith(_initial color:UIColor){
+        
+        
+        self.root!.view.addSubview(self.view)
+        self.view.setupLayoutConstraint_0_0_0_0_toParent()
+        
+        self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        
+        self.removeSelfWithoutAnimation()
+        
+        guard self.root != nil else {
+            return
+        }
+        
+        self.root!.view.addSubview(self.view)
+        self.view.setupLayoutConstraint_0_0_0_0_toParent()
+        
+        var tempHue:CGFloat = 0
+        var tempSaturation:CGFloat = 0
+        var tempBrightness:CGFloat = 0
+        var tempAlpha:CGFloat = 0
+        
+        color.getHue(&tempHue, saturation: &tempSaturation, brightness: &tempBrightness, alpha: &tempAlpha)
+        
+        currentHue = tempHue
+        currentSaturation = tempSaturation
+        
+        sliderChromeView.center = CGPoint(x: (currentHue*chromaticView.bounds.size.width)+sliderChromeView.bounds.origin.x,
+                                          y: (1.0-currentSaturation)*chromaticView.bounds.size.height+sliderChromeView.bounds.origin.y)
+        
+        
+        
+        sliderChromeView.backgroundColor = color
+        
+        sliderChromeView.setNeedsDisplay()
+        
+        self.startView()
     }
     
     
@@ -95,10 +139,19 @@ public class YWColorPicker: UIViewController {
             return
         }
         sliderChromeView.center = CGPoint.init(x: locationPoint.x, y: locationPoint.y);
+        updateHueSatWith(_movement: locationPoint)
         self.view.setNeedsDisplay()
     }
     
     private func updateHueSatWith(_movement point:CGPoint){
+        currentHue = (point.x - sliderChromeView.bounds.origin.x) / chromaticView.bounds.size.width
+        currentSaturation = 1.0 - (point.y - sliderChromeView.bounds.origin.y) / chromaticView.bounds.size.height
+        
+        let gradientColor:UIColor = UIColor.init(hue: currentHue,
+                                                 saturation: currentSaturation,
+                                                 brightness: 1.0,
+                                                 alpha: 1.0)
+        sliderChromeView.backgroundColor = gradientColor
         
     }
     

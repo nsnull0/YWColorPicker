@@ -31,6 +31,13 @@ extension UIViewController {
         
     }
     
+    func removeSelfWithoutAnimation() {
+        self.view.frame = CGRect(x: -self.getScreenWidth(), y: self.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        self.view.removeFromSuperview();
+        self.removeFromParentViewController();
+
+    }
+    
     
     func startView() {
         

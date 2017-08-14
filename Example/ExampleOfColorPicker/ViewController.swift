@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
     @IBAction func tapContainer(_ sender: UITapGestureRecognizer) {
         
-        pickerColor!.showColorPicker()
+        pickerColor!.showColorPickerWith(_initial: UIColor.blue)
         
     }
 
