@@ -98,6 +98,10 @@ public class YWColorPicker: UIViewController {
         self.view.setNeedsDisplay()
     }
     
+    private func updateHueSatWith(_movement point:CGPoint){
+        
+    }
+    
     //MARK: Touch Gesture
     @IBAction func tapDismiss(_ sender: UITapGestureRecognizer) {
         
@@ -106,6 +110,8 @@ public class YWColorPicker: UIViewController {
         })
         
     }
+    
+    
     
 
 }

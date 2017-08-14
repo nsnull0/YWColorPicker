@@ -3,6 +3,7 @@ Simple Color Picker
 Will be ready soon!
 
 
+
 ## Support
 - Updated occasionally for more functionality
 
