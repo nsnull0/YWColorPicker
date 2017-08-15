@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         
         pickerColor = YWColorPicker(parent: self)
-        
+        pickerColor?.delegate = self
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,5 +36,11 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController:YWProtocol{
+    func finishSelection(_ color: UIColor) {
+        self.viewColor.backgroundColor = color
+    }
 }
 

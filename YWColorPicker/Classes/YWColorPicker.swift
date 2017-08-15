@@ -18,7 +18,7 @@ public class YWColorPicker: UIViewController {
     
     @IBOutlet weak var resultColorView: UIView!
     
-    
+    public weak var delegate:YWProtocol?
     
     private var currentHue:CGFloat = 0
     private var currentBrightness:CGFloat = 0
@@ -173,5 +173,23 @@ public class YWColorPicker: UIViewController {
     
     //MARK: Button Handle
     
+    @IBAction func cancelHandle(_ sender: UIButton) {
+        
+        self.removeSelf(completion: {
+            (_) in
+        })
+        
+    }
+    
+    @IBAction func finishPickColorHandle(_ sender: UIButton) {
+        
+        self.removeSelf(completion: {
+            (_) in
+            
+            self.delegate?.finishSelection(self.resultColorView.backgroundColor!)
+            
+        })
+        
+    }
 
 }
