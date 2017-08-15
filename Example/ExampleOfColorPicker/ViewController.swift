@@ -11,6 +11,7 @@ import YWColorPicker
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewColor: UIView!
     var pickerColor:YWColorPicker?
     
     override func viewDidLoad() {
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
     }
     @IBAction func tapContainer(_ sender: UITapGestureRecognizer) {
         
-        pickerColor!.showColorPickerWith(_initial: UIColor.blue)
+        pickerColor!.showColorPickerWith(_initial: viewColor.backgroundColor!)
         
     }
 

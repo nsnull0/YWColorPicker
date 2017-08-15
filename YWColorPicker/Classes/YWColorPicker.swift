@@ -16,10 +16,23 @@ public class YWColorPicker: UIViewController {
     
     @IBOutlet weak var sliderChromeView: UIView!
     
+    @IBOutlet weak var resultColorView: UIView!
+    
+    
     
     private var currentHue:CGFloat = 0
     private var currentBrightness:CGFloat = 0
     private var currentSaturation:CGFloat = 0
+    
+    private var changeSliderColor:UIColor{
+        set {
+            self.sliderChromeView.backgroundColor = newValue
+            self.resultColorView.backgroundColor = newValue
+        }
+        get{
+            return self.changeSliderColor
+        }
+    }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +119,7 @@ public class YWColorPicker: UIViewController {
                                           y: (1.0-currentSaturation)*chromaticView.bounds.size.height+sliderChromeView.bounds.origin.y)
         
         
-        sliderChromeView.backgroundColor = color
+        changeSliderColor = color
         
         
         self.startView()
@@ -144,7 +157,8 @@ public class YWColorPicker: UIViewController {
                                                  saturation: currentSaturation,
                                                  brightness: 1.0,
                                                  alpha: 1.0)
-        sliderChromeView.backgroundColor = gradientColor
+        
+        changeSliderColor = gradientColor
         
     }
     
@@ -157,7 +171,7 @@ public class YWColorPicker: UIViewController {
         
     }
     
-    
+    //MARK: Button Handle
     
 
 }
