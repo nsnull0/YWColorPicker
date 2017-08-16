@@ -11,7 +11,7 @@ s.platform     = :ios
 s.ios.deployment_target = "9.0"
 s.source       = { :git => "https://github.com/nsnull0/YWColorPicker.git", :tag => "#{s.version}" }
 s.source_files  = "YWColorPicker/Classes/*.{swift}"
-s.resources = "YWColorPicker/Resources/*.{png,jpeg,jpg,storyboard,xib}"
+s.resources = "YWColorPicker/Resources/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 s.framework  = "UIKit"
 
 end

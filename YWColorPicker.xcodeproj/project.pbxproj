@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		C18010B81F36E5C40081DAD4 /* YWExtensionOfUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */; };
 		C18010BA1F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */; };
-		C19637301F3EF4B500D801E1 /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = C196372F1F3EF4B500D801E1 /* colormap.png */; };
 		C1E234DB1F35D8FC001901D6 /* YWColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */; };
 		C1E234E01F35D8FC001901D6 /* YWColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234DF1F35D8FC001901D6 /* YWColorPickerTests.swift */; };
 		C1E234ED1F35E059001901D6 /* YWColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234EB1F35E059001901D6 /* YWColorPicker.swift */; };
 		C1E234EE1F35E059001901D6 /* YWColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E234EC1F35E059001901D6 /* YWColorPicker.xib */; };
 		C1E4F5451F436D8200625DB8 /* YWProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5441F436D8200625DB8 /* YWProtocol.swift */; };
+		C1E4F54F1F44C1D100625DB8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E4F54E1F44C1D100625DB8 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 /* Begin PBXFileReference section */
 		C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIView.swift; path = Classes/YWExtensionOfUIView.swift; sourceTree = "<group>"; };
 		C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWExtensionOfUIViewController.swift; path = Classes/YWExtensionOfUIViewController.swift; sourceTree = "<group>"; };
-		C196372F1F3EF4B500D801E1 /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 		C19637311F3EF97000D801E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C19637321F3EF98B00D801E1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C1E234D11F35D8FC001901D6 /* YWColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YWColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +41,7 @@
 		C1E234EC1F35E059001901D6 /* YWColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWColorPicker.xib; path = Resources/YWColorPicker.xib; sourceTree = "<group>"; };
 		C1E234EF1F35E51B001901D6 /* YWColorPicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = YWColorPicker.podspec; sourceTree = "<group>"; };
 		C1E4F5441F436D8200625DB8 /* YWProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWProtocol.swift; path = Classes/YWProtocol.swift; sourceTree = "<group>"; };
+		C1E4F54E1F44C1D100625DB8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Resources/Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E234EC1F35E059001901D6 /* YWColorPicker.xib */,
-				C196372F1F3EF4B500D801E1 /* colormap.png */,
+				C1E4F54E1F44C1D100625DB8 /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C19637301F3EF4B500D801E1 /* colormap.png in Resources */,
+				C1E4F54F1F44C1D100625DB8 /* Media.xcassets in Resources */,
 				C1E234EE1F35E059001901D6 /* YWColorPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -33,12 +33,12 @@
                     <blurEffect style="dark"/>
                 </visualEffectView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-IF-vE6">
-                    <rect key="frame" x="8" y="100" width="359" height="325"/>
+                    <rect key="frame" x="8" y="100" width="359" height="375"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="tzj-NM-Zq3">
                             <rect key="frame" x="8" y="10" width="343" height="150"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colormap.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tvv-sZ-CRa">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chromaticImage" translatesAutoresizingMaskIntoConstraints="NO" id="Tvv-sZ-CRa">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4G-XX-Nn0">
@@ -76,11 +76,8 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-k0-gAi">
-                            <rect key="frame" x="251" y="205" width="100" height="72"/>
+                            <rect key="frame" x="253" y="205" width="98" height="100"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="100" id="iJW-Wn-VSl"/>
-                            </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="setupResult">
                                     <integer key="value" value="1"/>
@@ -88,11 +85,12 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0L-e1-aB7">
-                            <rect key="frame" x="-1" y="295" width="181" height="30"/>
+                            <rect key="frame" x="-1" y="325" width="181" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="QUe-Nh-1Xb"/>
+                                <constraint firstAttribute="height" constant="50" id="QUe-Nh-1Xb"/>
                             </constraints>
-                            <state key="normal" title="cancel"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Cancel"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="setupButtonChoice">
                                     <color key="value" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -103,10 +101,10 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fh-Tz-Gia">
-                            <rect key="frame" x="8" y="203" width="218" height="72"/>
+                            <rect key="frame" x="8" y="203" width="220" height="100"/>
                             <subviews>
                                 <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-Sj-q5f" userLabel="black">
-                                    <rect key="frame" x="5" y="5" width="35" height="27"/>
+                                    <rect key="frame" x="5" y="5" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -118,7 +116,7 @@
                                     </connections>
                                 </view>
                                 <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zh7-45-8wS" userLabel="blue">
-                                    <rect key="frame" x="48" y="5" width="35.5" height="27"/>
+                                    <rect key="frame" x="48.5" y="5" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -130,7 +128,7 @@
                                     </connections>
                                 </view>
                                 <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-2m-CLH" userLabel="brown">
-                                    <rect key="frame" x="91.5" y="5" width="35" height="27"/>
+                                    <rect key="frame" x="92" y="5" width="36" height="41"/>
                                     <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -142,7 +140,7 @@
                                     </connections>
                                 </view>
                                 <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-Qq-lc8" userLabel="cyan">
-                                    <rect key="frame" x="134.5" y="5" width="35.5" height="27"/>
+                                    <rect key="frame" x="136" y="5" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -154,7 +152,7 @@
                                     </connections>
                                 </view>
                                 <view tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftu-GF-M1J" userLabel="green">
-                                    <rect key="frame" x="178" y="5" width="35" height="27"/>
+                                    <rect key="frame" x="179.5" y="5" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -166,7 +164,7 @@
                                     </connections>
                                 </view>
                                 <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiH-Rb-kX1" userLabel="pink">
-                                    <rect key="frame" x="5" y="40" width="35" height="27"/>
+                                    <rect key="frame" x="5" y="54" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -178,7 +176,7 @@
                                     </connections>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpA-7X-u9K" userLabel="orange">
-                                    <rect key="frame" x="48" y="40" width="35.5" height="27"/>
+                                    <rect key="frame" x="48.5" y="54" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -190,7 +188,7 @@
                                     </connections>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wie-g1-oGe" userLabel="purple">
-                                    <rect key="frame" x="91.5" y="40" width="35" height="27"/>
+                                    <rect key="frame" x="92" y="54" width="36" height="41"/>
                                     <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -202,7 +200,7 @@
                                     </connections>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1b-hz-FZ6" userLabel="red">
-                                    <rect key="frame" x="134.5" y="40" width="35.5" height="27"/>
+                                    <rect key="frame" x="136" y="54" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -214,7 +212,7 @@
                                     </connections>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3D-UA-bDH" userLabel="yellow">
-                                    <rect key="frame" x="178" y="40" width="35" height="27"/>
+                                    <rect key="frame" x="179.5" y="54" width="35.5" height="41"/>
                                     <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
@@ -253,10 +251,12 @@
                                 <constraint firstItem="FiH-Rb-kX1" firstAttribute="centerX" secondItem="Zaa-Sj-q5f" secondAttribute="centerX" id="be3-eC-Ic0"/>
                                 <constraint firstItem="wie-g1-oGe" firstAttribute="centerX" secondItem="0pu-2m-CLH" secondAttribute="centerX" id="dMO-vy-lv1"/>
                                 <constraint firstItem="Ftu-GF-M1J" firstAttribute="width" secondItem="4D2-Qq-lc8" secondAttribute="width" id="dep-X9-NJh"/>
+                                <constraint firstAttribute="width" constant="220" id="e3d-nw-gFF"/>
                                 <constraint firstItem="O1b-hz-FZ6" firstAttribute="width" secondItem="wie-g1-oGe" secondAttribute="width" id="eFn-ub-ahz"/>
                                 <constraint firstItem="O1b-hz-FZ6" firstAttribute="height" secondItem="wie-g1-oGe" secondAttribute="height" id="fDv-rD-Y46"/>
                                 <constraint firstItem="Zaa-Sj-q5f" firstAttribute="leading" secondItem="9fh-Tz-Gia" secondAttribute="leading" constant="5" id="gYj-j9-w6g"/>
                                 <constraint firstItem="0pu-2m-CLH" firstAttribute="leading" secondItem="zh7-45-8wS" secondAttribute="trailing" constant="8" id="ilD-2g-JTN"/>
+                                <constraint firstAttribute="height" constant="100" id="jM7-vu-HQM"/>
                                 <constraint firstItem="zh7-45-8wS" firstAttribute="height" secondItem="Zaa-Sj-q5f" secondAttribute="height" id="kmA-Ui-f0Q"/>
                                 <constraint firstItem="FiH-Rb-kX1" firstAttribute="width" secondItem="Zaa-Sj-q5f" secondAttribute="width" id="mc8-WA-BBP"/>
                                 <constraint firstAttribute="bottom" secondItem="FiH-Rb-kX1" secondAttribute="bottom" constant="5" id="mcZ-CR-Ie0"/>
@@ -271,12 +271,12 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuO-6A-zgK">
-                            <rect key="frame" x="179" y="295" width="181" height="30"/>
+                            <rect key="frame" x="179" y="325" width="181" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="SbP-Oc-f8E"/>
+                                <constraint firstAttribute="height" constant="50" id="SbP-Oc-f8E"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="done"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Done"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="setupButtonChoice">
                                     <color key="value" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -297,9 +297,9 @@
                         <constraint firstItem="OxO-zm-FHY" firstAttribute="leading" secondItem="Yji-I7-oZD" secondAttribute="trailing" constant="10" id="DaF-Ha-3tL"/>
                         <constraint firstItem="f0L-e1-aB7" firstAttribute="leading" secondItem="vZZ-IF-vE6" secondAttribute="leading" constant="-1" id="EUA-5c-4tx"/>
                         <constraint firstItem="OxO-zm-FHY" firstAttribute="centerY" secondItem="Yji-I7-oZD" secondAttribute="centerY" id="MMS-M7-mMD"/>
+                        <constraint firstAttribute="height" constant="375" id="OBQ-gm-S9v"/>
                         <constraint firstItem="Yji-I7-oZD" firstAttribute="leading" secondItem="vZZ-IF-vE6" secondAttribute="leading" constant="8" id="ZxN-dZ-J6p"/>
                         <constraint firstAttribute="trailing" secondItem="IuO-6A-zgK" secondAttribute="trailing" constant="-1" id="Zy2-dX-f1W"/>
-                        <constraint firstAttribute="height" constant="325" id="cB4-Iy-OSk"/>
                         <constraint firstItem="9fh-Tz-Gia" firstAttribute="leading" secondItem="vZZ-IF-vE6" secondAttribute="leading" constant="8" id="e5P-T4-mZQ"/>
                         <constraint firstItem="IuO-6A-zgK" firstAttribute="leading" secondItem="f0L-e1-aB7" secondAttribute="trailing" constant="-1" id="jGa-wg-xyC"/>
                         <constraint firstAttribute="trailing" secondItem="4Yt-k0-gAi" secondAttribute="trailing" constant="8" id="jfa-eS-hid"/>
@@ -308,7 +308,6 @@
                         <constraint firstItem="tzj-NM-Zq3" firstAttribute="top" secondItem="vZZ-IF-vE6" secondAttribute="top" constant="10" id="ntd-Da-qvC"/>
                         <constraint firstAttribute="bottom" secondItem="IuO-6A-zgK" secondAttribute="bottom" id="prt-6e-Onc"/>
                         <constraint firstItem="f0L-e1-aB7" firstAttribute="width" secondItem="IuO-6A-zgK" secondAttribute="width" id="shS-Zm-o3Q"/>
-                        <constraint firstAttribute="bottom" secondItem="9fh-Tz-Gia" secondAttribute="bottom" constant="50" id="uHU-t4-FJs"/>
                         <constraint firstItem="9fh-Tz-Gia" firstAttribute="top" secondItem="OxO-zm-FHY" secondAttribute="bottom" constant="8" id="wES-Id-fad"/>
                         <constraint firstAttribute="trailing" secondItem="tzj-NM-Zq3" secondAttribute="trailing" constant="8" id="xtD-np-8bv"/>
                     </constraints>
@@ -386,6 +385,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="colormap.png" width="1004" height="1004"/>
+        <image name="chromaticImage" width="502" height="502"/>
     </resources>
 </document>

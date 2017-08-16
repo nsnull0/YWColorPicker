@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06573EAE74A70CCDD9FC33BB743F09F1 /* YWColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F6250526AFE659B32F47DF8CC3F415 /* YWColorPicker.xib */; };
 		12E1EEC4EFB0ED81999F2C893327C7C0 /* YWExtensionOfUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6FCEEE7A35E72C88258FA154325DD /* YWExtensionOfUIView.swift */; };
 		1E983665D81D68C073DCBC6C9ED957E5 /* YWProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7C0671B6FAE3CBC5130132FD12634F /* YWProtocol.swift */; };
 		4597BD12A40A3EBE0EB53FD1330885A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
@@ -16,10 +15,12 @@
 		5AB645EE8F7808D7F037781BBFA77EEE /* Pods-ExampleOfColorPickerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DA279631121FCEE3A5FBCE4E7A0F3 /* Pods-ExampleOfColorPickerUITests-dummy.m */; };
 		7A4061A5141DCB0347DA7CCBF7CB2909 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 		81CAE91C1EAA6AD72B1253066A6DC13B /* Pods-ExampleOfColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A2E1835CA20DEE0C9A745B3CF43783 /* Pods-ExampleOfColorPicker-dummy.m */; };
+		8DBA745A4FE3AFCE5EC3CAA8BEE042A6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255CB9FDDDD54D0E5F40C093ADABC868 /* Media.xcassets */; };
 		A0E104C77BFBFCFC0CA6FFEED8D881FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		A460F7A6F43FCA3CEFB5810F7141F625 /* Pods-ExampleOfColorPickerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F60D12455E29E93932C60A6839485FA /* Pods-ExampleOfColorPickerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6886DAEC017E5C73D456A8A38580EAA /* Pods-ExampleOfColorPickerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FCFB7E14655D86033AF78B95A9F6C7 /* Pods-ExampleOfColorPickerTests-dummy.m */; };
 		CC6B8B781EB2BE8F4BE1489758F4AA24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		CD544F46016CFD98E4622E6C2D544125 /* YWColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CED57EB530D1DB0AEA6DE55075147E /* YWColorPicker.xib */; };
 		DD9C20213B39E81BF442C36C1F0894A9 /* YWColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4744FAF9BDA51E13AE7C6C42CCD06E /* YWColorPicker-dummy.m */; };
 		E4EAC45AE2362B547829B7DBC65D18A9 /* Pods-ExampleOfColorPickerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86476A83B6131E82C56DC303C7E62E4C /* Pods-ExampleOfColorPickerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECCDCD5D8835ED5C6A7A68B342747BD1 /* YWExtensionOfUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DF72A32B5EFB702EFD1FFFCC193625 /* YWExtensionOfUIViewController.swift */; };
@@ -43,10 +44,12 @@
 		05780B463379102A90CB783D9BC472E2 /* Pods-ExampleOfColorPickerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleOfColorPickerUITests-resources.sh"; sourceTree = "<group>"; };
 		08CF86710621BA33543906510F8C3434 /* Pods_ExampleOfColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExampleOfColorPicker.framework; path = "Pods-ExampleOfColorPicker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A86D475AB3D973382FA9F374957FE3 /* Pods-ExampleOfColorPickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleOfColorPickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14CED57EB530D1DB0AEA6DE55075147E /* YWColorPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YWColorPicker.xib; sourceTree = "<group>"; };
 		1742A16D598B0FA1CA9F6F56FA163448 /* Pods-ExampleOfColorPickerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ExampleOfColorPickerUITests.modulemap"; sourceTree = "<group>"; };
 		18FEE7A2D00CC3FFF6D4DEE2B4C52E28 /* Pods-ExampleOfColorPickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleOfColorPickerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1E49323417823647AE86BEE5EBB999C0 /* Pods-ExampleOfColorPickerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ExampleOfColorPickerTests.modulemap"; sourceTree = "<group>"; };
 		23FCFB7E14655D86033AF78B95A9F6C7 /* Pods-ExampleOfColorPickerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleOfColorPickerTests-dummy.m"; sourceTree = "<group>"; };
+		255CB9FDDDD54D0E5F40C093ADABC868 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		255F255AE60A72C26434DB6F4538AAAD /* Pods-ExampleOfColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ExampleOfColorPicker.modulemap"; sourceTree = "<group>"; };
 		260F2E12DFBF7A23698C64D301483BA7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3172DD4D795A146AEEDB8F7375FDE476 /* Pods-ExampleOfColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleOfColorPicker-umbrella.h"; sourceTree = "<group>"; };
@@ -67,7 +70,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA9A3863CC8C4D31E2F64C4619538639 /* YWColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YWColorPicker.xcconfig; sourceTree = "<group>"; };
 		AF3843DD5BC38F93934B3741993BE843 /* YWColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YWColorPicker-umbrella.h"; sourceTree = "<group>"; };
-		B4F6250526AFE659B32F47DF8CC3F415 /* YWColorPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YWColorPicker.xib; sourceTree = "<group>"; };
 		B9C849484A3D4830F0751A6C81C362DD /* Pods-ExampleOfColorPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleOfColorPicker.release.xcconfig"; sourceTree = "<group>"; };
 		BAA433F7429F470722B3395E323C0446 /* Pods-ExampleOfColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleOfColorPicker.debug.xcconfig"; sourceTree = "<group>"; };
 		BF0C04949736AEE75E510A3ABA0876E5 /* Pods-ExampleOfColorPickerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleOfColorPickerTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -187,6 +189,16 @@
 			path = "Target Support Files/Pods-ExampleOfColorPicker";
 			sourceTree = "<group>";
 		};
+		7920C50393A1439A57A614FC97F3A7E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				255CB9FDDDD54D0E5F40C093ADABC868 /* Media.xcassets */,
+				14CED57EB530D1DB0AEA6DE55075147E /* YWColorPicker.xib */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +213,7 @@
 		A288D45796337A33196D498EB1025795 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F1A45AC6CEAEC721342A74FDDF7F86FE /* YWColorPicker */,
+				CEDB9B92343CE1957851C3AA6EE3F621 /* YWColorPicker */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -230,15 +242,6 @@
 			);
 			name = "Pods-ExampleOfColorPickerTests";
 			path = "Target Support Files/Pods-ExampleOfColorPickerTests";
-			sourceTree = "<group>";
-		};
-		ADD0F3B0B5B5F125874305D522F0C48B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B4F6250526AFE659B32F47DF8CC3F415 /* YWColorPicker.xib */,
-			);
-			name = Resources;
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		B8E60BF778576D5DBC5B8AAC380531D5 /* Products */ = {
@@ -270,6 +273,15 @@
 			path = "Target Support Files/Pods-ExampleOfColorPickerUITests";
 			sourceTree = "<group>";
 		};
+		CEDB9B92343CE1957851C3AA6EE3F621 /* YWColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				7920C50393A1439A57A614FC97F3A7E8 /* Resources */,
+			);
+			name = YWColorPicker;
+			path = YWColorPicker;
+			sourceTree = "<group>";
+		};
 		D49F253DC32B80975DF8F9733A1C6B95 /* YWColorPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,15 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				00AF6527DB0ACCE2118320724615907F /* Classes */,
-			);
-			name = YWColorPicker;
-			path = YWColorPicker;
-			sourceTree = "<group>";
-		};
-		F1A45AC6CEAEC721342A74FDDF7F86FE /* YWColorPicker */ = {
-			isa = PBXGroup;
-			children = (
-				ADD0F3B0B5B5F125874305D522F0C48B /* Resources */,
 			);
 			name = YWColorPicker;
 			path = YWColorPicker;
@@ -352,7 +355,7 @@
 			buildPhases = (
 				9ADBD8ED06F8604F447218CE7FE72AE4 /* Sources */,
 				7B90C44EBA7586E38D8F16C008CDD4BB /* Frameworks */,
-				27F73CA965549782BA1B296E8875EDCB /* Resources */,
+				2B00D5EEB6ECA72FC8409D0DE4430514 /* Resources */,
 				18480A55FFD65CD614C55983B12A85DA /* Headers */,
 			);
 			buildRules = (
@@ -446,11 +449,12 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		27F73CA965549782BA1B296E8875EDCB /* Resources */ = {
+		2B00D5EEB6ECA72FC8409D0DE4430514 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06573EAE74A70CCDD9FC33BB743F09F1 /* YWColorPicker.xib in Resources */,
+				8DBA745A4FE3AFCE5EC3CAA8BEE042A6 /* Media.xcassets in Resources */,
+				CD544F46016CFD98E4622E6C2D544125 /* YWColorPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
