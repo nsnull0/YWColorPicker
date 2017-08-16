@@ -73,6 +73,17 @@ extension UIView {
         }
     }
     
+    var setupColorAppleItem:UIColor{
+        set{
+            self.layer.cornerRadius = (self.bounds.size.width+self.bounds.size.height)/16
+            self.layer.masksToBounds = true
+            self.backgroundColor = newValue
+        }
+        
+        get{
+            return self.backgroundColor!
+        }
+    }
     
     
     

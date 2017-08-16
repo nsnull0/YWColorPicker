@@ -111,7 +111,141 @@
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fh-Tz-Gia">
                             <rect key="frame" x="8" y="203" width="283" height="114"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-Sj-q5f" userLabel="black">
+                                    <rect key="frame" x="5" y="5" width="48" height="48"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zh7-45-8wS" userLabel="blue">
+                                    <rect key="frame" x="61" y="5" width="48.5" height="48"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-2m-CLH" userLabel="brown">
+                                    <rect key="frame" x="117.5" y="5" width="48" height="48"/>
+                                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-Qq-lc8" userLabel="cyan">
+                                    <rect key="frame" x="173.5" y="5" width="48.5" height="48"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftu-GF-M1J" userLabel="green">
+                                    <rect key="frame" x="230" y="5" width="48" height="48"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiH-Rb-kX1" userLabel="pink">
+                                    <rect key="frame" x="5" y="61" width="48" height="48"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpA-7X-u9K" userLabel="orange">
+                                    <rect key="frame" x="61" y="61" width="48.5" height="48"/>
+                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wie-g1-oGe" userLabel="purple">
+                                    <rect key="frame" x="117.5" y="61" width="48" height="48"/>
+                                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1b-hz-FZ6" userLabel="red">
+                                    <rect key="frame" x="173.5" y="61" width="48.5" height="48"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3D-UA-bDH" userLabel="yellow">
+                                    <rect key="frame" x="230" y="61" width="48" height="48"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="setupColorAppleItem">
+                                            <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="4D2-Qq-lc8" firstAttribute="height" secondItem="0pu-2m-CLH" secondAttribute="height" id="2fx-Fd-VJb"/>
+                                <constraint firstItem="0pu-2m-CLH" firstAttribute="height" secondItem="zh7-45-8wS" secondAttribute="height" id="4Uz-Eg-gCu"/>
+                                <constraint firstItem="zh7-45-8wS" firstAttribute="width" secondItem="Zaa-Sj-q5f" secondAttribute="width" id="5nS-Mr-XvI"/>
+                                <constraint firstItem="O1b-hz-FZ6" firstAttribute="centerY" secondItem="wie-g1-oGe" secondAttribute="centerY" id="69C-vc-2gE"/>
+                                <constraint firstItem="m3D-UA-bDH" firstAttribute="centerY" secondItem="O1b-hz-FZ6" secondAttribute="centerY" id="6nG-4S-IYq"/>
+                                <constraint firstItem="Ftu-GF-M1J" firstAttribute="centerY" secondItem="4D2-Qq-lc8" secondAttribute="centerY" id="8qd-Es-D7t"/>
+                                <constraint firstItem="m3D-UA-bDH" firstAttribute="centerX" secondItem="Ftu-GF-M1J" secondAttribute="centerX" id="9nY-1b-h9g"/>
+                                <constraint firstItem="QpA-7X-u9K" firstAttribute="width" secondItem="FiH-Rb-kX1" secondAttribute="width" id="Ask-vk-7Mf"/>
+                                <constraint firstItem="0pu-2m-CLH" firstAttribute="width" secondItem="zh7-45-8wS" secondAttribute="width" id="BFz-LP-D9Q"/>
+                                <constraint firstItem="FiH-Rb-kX1" firstAttribute="top" secondItem="Zaa-Sj-q5f" secondAttribute="bottom" constant="8" id="Bwh-2t-LBJ"/>
+                                <constraint firstItem="Zaa-Sj-q5f" firstAttribute="top" secondItem="9fh-Tz-Gia" secondAttribute="top" constant="5" id="DgV-9E-4ry"/>
+                                <constraint firstAttribute="trailing" secondItem="Ftu-GF-M1J" secondAttribute="trailing" constant="5" id="Gne-Aw-xkN"/>
+                                <constraint firstItem="m3D-UA-bDH" firstAttribute="width" secondItem="O1b-hz-FZ6" secondAttribute="width" id="JMW-j0-Y6H"/>
+                                <constraint firstItem="4D2-Qq-lc8" firstAttribute="width" secondItem="0pu-2m-CLH" secondAttribute="width" id="KJy-61-TqH"/>
+                                <constraint firstItem="QpA-7X-u9K" firstAttribute="height" secondItem="FiH-Rb-kX1" secondAttribute="height" id="NHA-Ub-QI8"/>
+                                <constraint firstItem="4D2-Qq-lc8" firstAttribute="centerY" secondItem="0pu-2m-CLH" secondAttribute="centerY" id="Oap-wO-1R8"/>
+                                <constraint firstItem="wie-g1-oGe" firstAttribute="width" secondItem="QpA-7X-u9K" secondAttribute="width" id="R5F-8m-dGU"/>
+                                <constraint firstItem="QpA-7X-u9K" firstAttribute="centerY" secondItem="FiH-Rb-kX1" secondAttribute="centerY" id="Tkp-1B-9hu"/>
+                                <constraint firstItem="O1b-hz-FZ6" firstAttribute="centerX" secondItem="4D2-Qq-lc8" secondAttribute="centerX" id="XtF-vg-B2X"/>
+                                <constraint firstItem="QpA-7X-u9K" firstAttribute="centerX" secondItem="zh7-45-8wS" secondAttribute="centerX" id="YRB-5H-dei"/>
+                                <constraint firstItem="Ftu-GF-M1J" firstAttribute="height" secondItem="4D2-Qq-lc8" secondAttribute="height" id="Zxn-wy-13j"/>
+                                <constraint firstItem="Ftu-GF-M1J" firstAttribute="leading" secondItem="4D2-Qq-lc8" secondAttribute="trailing" constant="8" id="aqI-NR-imZ"/>
+                                <constraint firstItem="FiH-Rb-kX1" firstAttribute="centerX" secondItem="Zaa-Sj-q5f" secondAttribute="centerX" id="be3-eC-Ic0"/>
+                                <constraint firstItem="wie-g1-oGe" firstAttribute="centerX" secondItem="0pu-2m-CLH" secondAttribute="centerX" id="dMO-vy-lv1"/>
+                                <constraint firstItem="Ftu-GF-M1J" firstAttribute="width" secondItem="4D2-Qq-lc8" secondAttribute="width" id="dep-X9-NJh"/>
+                                <constraint firstItem="O1b-hz-FZ6" firstAttribute="width" secondItem="wie-g1-oGe" secondAttribute="width" id="eFn-ub-ahz"/>
+                                <constraint firstItem="O1b-hz-FZ6" firstAttribute="height" secondItem="wie-g1-oGe" secondAttribute="height" id="fDv-rD-Y46"/>
+                                <constraint firstItem="Zaa-Sj-q5f" firstAttribute="leading" secondItem="9fh-Tz-Gia" secondAttribute="leading" constant="5" id="gYj-j9-w6g"/>
+                                <constraint firstItem="0pu-2m-CLH" firstAttribute="leading" secondItem="zh7-45-8wS" secondAttribute="trailing" constant="8" id="ilD-2g-JTN"/>
+                                <constraint firstItem="zh7-45-8wS" firstAttribute="height" secondItem="Zaa-Sj-q5f" secondAttribute="height" id="kmA-Ui-f0Q"/>
+                                <constraint firstItem="FiH-Rb-kX1" firstAttribute="width" secondItem="Zaa-Sj-q5f" secondAttribute="width" id="mc8-WA-BBP"/>
+                                <constraint firstAttribute="bottom" secondItem="FiH-Rb-kX1" secondAttribute="bottom" constant="5" id="mcZ-CR-Ie0"/>
+                                <constraint firstItem="wie-g1-oGe" firstAttribute="centerY" secondItem="QpA-7X-u9K" secondAttribute="centerY" id="mpD-O3-V47"/>
+                                <constraint firstItem="m3D-UA-bDH" firstAttribute="height" secondItem="O1b-hz-FZ6" secondAttribute="height" id="rjY-h9-S3E"/>
+                                <constraint firstItem="zh7-45-8wS" firstAttribute="leading" secondItem="Zaa-Sj-q5f" secondAttribute="trailing" constant="8" id="s44-W1-Vvn"/>
+                                <constraint firstItem="zh7-45-8wS" firstAttribute="centerY" secondItem="Zaa-Sj-q5f" secondAttribute="centerY" id="tRU-YM-34A"/>
+                                <constraint firstItem="0pu-2m-CLH" firstAttribute="centerY" secondItem="zh7-45-8wS" secondAttribute="centerY" id="tbt-a7-8mD"/>
+                                <constraint firstItem="FiH-Rb-kX1" firstAttribute="height" secondItem="Zaa-Sj-q5f" secondAttribute="height" id="yMr-u0-Wp7"/>
+                                <constraint firstItem="wie-g1-oGe" firstAttribute="height" secondItem="QpA-7X-u9K" secondAttribute="height" id="ygc-Dy-bMP"/>
+                                <constraint firstItem="4D2-Qq-lc8" firstAttribute="leading" secondItem="0pu-2m-CLH" secondAttribute="trailing" constant="8" id="zzl-TY-SX1"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
