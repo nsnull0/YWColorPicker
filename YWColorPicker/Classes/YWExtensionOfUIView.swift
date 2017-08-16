@@ -85,6 +85,18 @@ extension UIView {
         }
     }
     
+    var setupButtonChoice:UIColor{
+        set{
+            self.layer.masksToBounds = true
+            self.layer.borderColor = newValue.cgColor
+            self.layer.borderWidth = 1
+            
+        }
+        
+        get{
+            return UIColor.blue
+        }
+    }
     
     
 }
