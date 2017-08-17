@@ -18,19 +18,49 @@ public class YWColorPicker: UIViewController {
     
     @IBOutlet weak var resultColorView: UIView!
     
+    
+    @IBOutlet weak var brightnessSlider: UISlider!
+    
+    
     public weak var delegate:YWProtocol?
     
     private var currentHue:CGFloat = 0
-    private var currentBrightness:CGFloat = 0
+    private var currentBrightness:CGFloat = 1.0
     private var currentSaturation:CGFloat = 0
     
     private var changeSliderColor:UIColor{
         set {
             self.sliderChromeView.backgroundColor = newValue
             self.resultColorView.backgroundColor = newValue
+            self.brightnessSlider.minimumTrackTintColor = newValue
         }
         get{
             return self.changeSliderColor
+        }
+    }
+    
+    private var changeOpacitySliderColor:CGFloat{
+        set{
+            
+            var tempHue:CGFloat = 0
+            var tempSaturation:CGFloat = 0
+            var tempBrightness:CGFloat = 0
+            var tempAlpha:CGFloat = 0
+            
+            self.resultColorView.backgroundColor!.getHue(&tempHue, saturation: &tempSaturation, brightness: &tempBrightness, alpha: &tempAlpha)
+            
+            currentBrightness = newValue
+            
+            let currentColor:UIColor = UIColor(hue: tempHue, saturation: tempSaturation,
+                                               brightness: currentBrightness, alpha: tempAlpha)
+            
+            self.brightnessSlider.minimumTrackTintColor = currentColor
+            self.resultColorView.backgroundColor = currentColor
+            self.sliderChromeView.backgroundColor = currentColor
+        }
+        
+        get{
+            return self.changeOpacitySliderColor
         }
     }
     
@@ -102,24 +132,7 @@ public class YWColorPicker: UIViewController {
         self.root!.view.addSubview(self.view)
         self.view.setupLayoutConstraint_0_0_0_0_toParent()
         
-        var tempHue:CGFloat = 0
-        var tempSaturation:CGFloat = 0
-        var tempBrightness:CGFloat = 0
-        var tempAlpha:CGFloat = 0
-        
-        color.getHue(&tempHue, saturation: &tempSaturation, brightness: &tempBrightness, alpha: &tempAlpha)
-        
-        currentHue = tempHue
-        currentSaturation = tempSaturation
-        
-        
-        self.view.layoutIfNeeded()
-        
-        sliderChromeView.center = CGPoint(x: (currentHue*chromaticView.bounds.size.width)+sliderChromeView.bounds.origin.x,
-                                          y: (1.0-currentSaturation)*chromaticView.bounds.size.height+sliderChromeView.bounds.origin.y)
-        
-        
-        changeSliderColor = color
+        self.changePositionBasedOn(_color: color)
         
         
         self.startView()
@@ -128,6 +141,7 @@ public class YWColorPicker: UIViewController {
     
     // MARK: Touch Handling
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         for touch:UITouch in touches {
             self.dispatchTouchEvent(_point: touch.location(in: self.chromaticView))
         }
@@ -155,10 +169,33 @@ public class YWColorPicker: UIViewController {
         
         let gradientColor:UIColor = UIColor.init(hue: currentHue,
                                                  saturation: currentSaturation,
-                                                 brightness: 1.0,
+                                                 brightness: currentBrightness,
                                                  alpha: 1.0)
         
         changeSliderColor = gradientColor
+        
+    }
+    
+    private func changePositionBasedOn(_color value:UIColor){
+        
+        var tempHue:CGFloat = 0
+        var tempSaturation:CGFloat = 0
+        var tempBrightness:CGFloat = 0
+        var tempAlpha:CGFloat = 0
+        
+        value.getHue(&tempHue, saturation: &tempSaturation, brightness: &tempBrightness, alpha: &tempAlpha)
+        
+        currentHue = tempHue
+        currentSaturation = tempSaturation
+        currentBrightness = tempBrightness
+        
+        self.view.layoutIfNeeded()
+        
+        sliderChromeView.center = CGPoint(x: (currentHue*chromaticView.bounds.size.width)+sliderChromeView.bounds.origin.x,
+                                          y: (1.0-currentSaturation)*chromaticView.bounds.size.height+sliderChromeView.bounds.origin.y)
+        
+        
+        changeSliderColor = value
         
     }
     
@@ -175,6 +212,7 @@ public class YWColorPicker: UIViewController {
         
         print("\(String(describing: sender.view!.setupColorAppleItem))")
         self.resultColorView.backgroundColor = sender.view!.setupColorAppleItem
+        self.brightnessSlider.minimumTrackTintColor = self.resultColorView.backgroundColor
     }
     
     
@@ -199,5 +237,14 @@ public class YWColorPicker: UIViewController {
         })
         
     }
+    
+    //MARK: Opacity Slider handler
+    
+    @IBAction func opacityChangeValue(_ sender: UISlider) {
+        
+        changeOpacitySliderColor = CGFloat(sender.value)
+        
+    }
+    
 
 }

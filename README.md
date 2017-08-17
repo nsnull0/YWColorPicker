@@ -1,7 +1,10 @@
 # YWColorPicker
-Simple Color Picker
-Will be ready soon at Cocoapods!
 
+Simple Color Picker
+
+
+## Availability
+#### ⚠️ **This Library only Available to Swift > 3.0** ⚠️
 
 ### CocoaPods Local
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
@@ -29,6 +32,20 @@ $ pod install
 ```swift
 showColorPicker()
 showColorPicker(_initial color:UIColor)
+```
+
+## Delegation
+```swift
+func finishSelection(_ color:UIColor)
+```
+
+## Example
+```swift
+var pickerColor:YWColorPicker?
+
+pickerColor = YWColorPicker(parent: self)
+pickerColor?.delegate = self
+
 ```
 
 
