@@ -1,4 +1,4 @@
-anguage: swift
+language: swift
 os: osx
 xcode_project: YWColorPicker.xcodeproj
 xcode_scheme: YWColorPickerTests
