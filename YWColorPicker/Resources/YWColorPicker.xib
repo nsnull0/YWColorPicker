@@ -68,8 +68,6 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="DSK-PT-s5A"/>
                             </constraints>
-                            <color key="minimumTrackTintColor" red="0.0" green="0.78066112750000005" blue="0.78803855180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="thumbTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="opacityChangeValue:" destination="-1" eventType="valueChanged" id="xWb-D8-CmV"/>
                             </connections>

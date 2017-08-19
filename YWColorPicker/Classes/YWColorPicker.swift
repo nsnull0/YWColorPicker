@@ -32,7 +32,6 @@ public class YWColorPicker: UIViewController {
         set {
             self.sliderChromeView.backgroundColor = newValue
             self.resultColorView.backgroundColor = newValue
-            self.brightnessSlider.minimumTrackTintColor = newValue
         }
         get{
             return self.changeSliderColor
@@ -54,7 +53,6 @@ public class YWColorPicker: UIViewController {
             let currentColor:UIColor = UIColor(hue: tempHue, saturation: tempSaturation,
                                                brightness: currentBrightness, alpha: tempAlpha)
             
-            self.brightnessSlider.minimumTrackTintColor = currentColor
             self.resultColorView.backgroundColor = currentColor
             self.sliderChromeView.backgroundColor = currentColor
         }
