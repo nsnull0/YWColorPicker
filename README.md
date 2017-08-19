@@ -10,6 +10,11 @@ Simple Color Picker
 ## Availability
 #### ⚠️ **This Library only Available to Swift > 3.0** ⚠️
 
+
+
+## Screenshot
+![Demo](http://imgur.com/3MzizOl)
+
 ### CocoaPods Local
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 

@@ -13,7 +13,7 @@
 		C1E234E01F35D8FC001901D6 /* YWColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234DF1F35D8FC001901D6 /* YWColorPickerTests.swift */; };
 		C1E234ED1F35E059001901D6 /* YWColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E234EB1F35E059001901D6 /* YWColorPicker.swift */; };
 		C1E234EE1F35E059001901D6 /* YWColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E234EC1F35E059001901D6 /* YWColorPicker.xib */; };
-		C1E4F5451F436D8200625DB8 /* YWProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5441F436D8200625DB8 /* YWProtocol.swift */; };
+		C1E4F5451F436D8200625DB8 /* YWColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5441F436D8200625DB8 /* YWColorProtocol.swift */; };
 		C1E4F54F1F44C1D100625DB8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E4F54E1F44C1D100625DB8 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		C1E234EB1F35E059001901D6 /* YWColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWColorPicker.swift; path = Classes/YWColorPicker.swift; sourceTree = "<group>"; };
 		C1E234EC1F35E059001901D6 /* YWColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWColorPicker.xib; path = Resources/YWColorPicker.xib; sourceTree = "<group>"; };
 		C1E234EF1F35E51B001901D6 /* YWColorPicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = YWColorPicker.podspec; sourceTree = "<group>"; };
-		C1E4F5441F436D8200625DB8 /* YWProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWProtocol.swift; path = Classes/YWProtocol.swift; sourceTree = "<group>"; };
+		C1E4F5441F436D8200625DB8 /* YWColorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YWColorProtocol.swift; path = Classes/YWColorProtocol.swift; sourceTree = "<group>"; };
 		C1E4F54E1F44C1D100625DB8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Resources/Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +68,7 @@
 			children = (
 				C18010B71F36E5C40081DAD4 /* YWExtensionOfUIView.swift */,
 				C18010B91F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift */,
-				C1E4F5441F436D8200625DB8 /* YWProtocol.swift */,
+				C1E4F5441F436D8200625DB8 /* YWColorProtocol.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C18010BA1F36EF6C0081DAD4 /* YWExtensionOfUIViewController.swift in Sources */,
-				C1E4F5451F436D8200625DB8 /* YWProtocol.swift in Sources */,
+				C1E4F5451F436D8200625DB8 /* YWColorProtocol.swift in Sources */,
 				C1E234ED1F35E059001901D6 /* YWColorPicker.swift in Sources */,
 				C18010B81F36E5C40081DAD4 /* YWExtensionOfUIView.swift in Sources */,
 			);

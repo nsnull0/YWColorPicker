@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol YWProtocol: class {
+public protocol YWColorProtocol: class {
 
     func finishSelection(_ color:UIColor)
     

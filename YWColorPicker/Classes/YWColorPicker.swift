@@ -22,7 +22,7 @@ public class YWColorPicker: UIViewController {
     @IBOutlet weak var brightnessSlider: UISlider!
     
     
-    public weak var delegate:YWProtocol?
+    public weak var delegate:YWColorProtocol?
     
     private var currentHue:CGFloat = 0
     private var currentBrightness:CGFloat = 1.0
