@@ -13,7 +13,7 @@ Simple Color Picker
 
 
 ## Screenshot
-![Demo](http://imgur.com/3MzizOl)
+<img src="https://raw.github.com/nsnull0/YWColorPicker/master/ss_colorpicker.png" alt="iPhone6s" width="414" />
 
 ### CocoaPods Local
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
