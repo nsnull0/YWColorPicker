@@ -55,6 +55,7 @@ pickerColor?.delegate = self
 
 ## Support
 - Updated occasionally for more functionality
+- Message me through here http://yoseph.ws for more fast responds
 
 
 ## Credits
