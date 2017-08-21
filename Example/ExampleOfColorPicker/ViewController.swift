@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController:YWProtocol{
+extension ViewController:YWColorProtocol{
     func finishSelection(_ color: UIColor) {
         self.viewColor.backgroundColor = color
     }

@@ -208,9 +208,8 @@ public class YWColorPicker: UIViewController {
     
     @IBAction func tapViewChromaticColorView(_ sender: UITapGestureRecognizer) {
         
-        print("\(String(describing: sender.view!.setupColorAppleItem))")
         self.resultColorView.backgroundColor = sender.view!.setupColorAppleItem
-        self.brightnessSlider.minimumTrackTintColor = self.resultColorView.backgroundColor
+        
     }
     
     
