@@ -28,6 +28,8 @@ public class YWColorPicker: UIViewController {
     private var currentBrightness:CGFloat = 1.0
     private var currentSaturation:CGFloat = 0
     
+    private var selectedTag:Int = 1
+    
     private var changeSliderColor:UIColor{
         set {
             self.sliderChromeView.backgroundColor = newValue
@@ -230,6 +232,7 @@ public class YWColorPicker: UIViewController {
             (_) in
             
             self.delegate?.finishSelection(self.resultColorView.backgroundColor!)
+            self.delegate?.finishSelectionWith(self.selectedTag, color: self.resultColorView.backgroundColor!)
             
         })
         

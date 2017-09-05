@@ -12,4 +12,6 @@ public protocol YWColorProtocol: class {
 
     func finishSelection(_ color:UIColor)
     
+    func finishSelectionWith(_ tag:Int, color:UIColor)
+    
 }
