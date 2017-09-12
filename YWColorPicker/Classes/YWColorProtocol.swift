@@ -14,4 +14,17 @@ public protocol YWColorProtocol: class {
     
     func finishSelectionWith(_ tag:Int, color:UIColor)
     
+    func finishSelectionWith(_ tag:Int, _with R:CGFloat, G:CGFloat, B:CGFloat, A:CGFloat)
+}
+
+public struct rgbaDTO {
+     var Red:CGFloat = 0
+     var Green:CGFloat = 0
+     var Blue:CGFloat = 0
+     var Alpha:CGFloat = 0
+    
+    init(v:UIColor) {
+        v.getRed(&Red, green: &Green, blue: &Blue, alpha: &Alpha)
+    }
+    init(){ }
 }

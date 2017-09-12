@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "YWColorPicker"
-s.version      = "1.3"
+s.version      = "1.4"
 s.summary      = "YWColorPicker Simple Color Picker"
 s.description  = "Simple Color Picker for you to try, Lightweight color picker written in Swift 3.0"
 s.requires_arc = true

@@ -30,6 +30,9 @@ public class YWColorPicker: UIViewController {
     
     private var selectedTag:Int = 1
     
+    
+    
+    
     private var changeSliderColor:UIColor{
         set {
             self.sliderChromeView.backgroundColor = newValue
@@ -63,6 +66,8 @@ public class YWColorPicker: UIViewController {
             return self.changeOpacitySliderColor
         }
     }
+    
+    
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -217,7 +222,6 @@ public class YWColorPicker: UIViewController {
     
     
     //MARK: Button Handle
-    
     @IBAction func cancelHandle(_ sender: UIButton) {
         
         self.removeSelf(completion: {
@@ -234,12 +238,16 @@ public class YWColorPicker: UIViewController {
             self.delegate?.finishSelection(self.resultColorView.backgroundColor!)
             self.delegate?.finishSelectionWith(self.selectedTag, color: self.resultColorView.backgroundColor!)
             
+            
+            let colorDTO:rgbaDTO = rgbaDTO(v:self.resultColorView.backgroundColor!)
+            self.delegate?.finishSelectionWith(self.selectedTag, _with: colorDTO.Red, G: colorDTO.Green, B: colorDTO.Blue, A: colorDTO.Alpha)
+            
         })
         
     }
     
-    //MARK: Opacity Slider handler
     
+    //MARK: Opacity Slider handler
     @IBAction func opacityChangeValue(_ sender: UISlider) {
         
         changeOpacitySliderColor = CGFloat(sender.value)

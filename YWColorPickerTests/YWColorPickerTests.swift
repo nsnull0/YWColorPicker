@@ -73,4 +73,18 @@ class YWColorPickerTests: XCTestCase {
         
     }
     
+    func testColorConverterDTO() {
+        
+        var dto:rgbaDTO = rgbaDTO()
+        
+        
+        XCTAssertEqual([dto.Red, dto.Blue, dto.Green, dto.Alpha], [0,0,0,0])
+        
+        
+        dto = rgbaDTO(v: UIColor.red)
+        
+        XCTAssertNotEqual([dto.Red, dto.Blue, dto.Green, dto.Alpha], [0,0,0,0])
+        
+    }
+    
 }
